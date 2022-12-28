@@ -1,2 +1,3 @@
-# LEGO
-LEGO Database exploration
+# Portfolio Projects
+1. LEGO Database exploration
+  SQL, PowerBI
