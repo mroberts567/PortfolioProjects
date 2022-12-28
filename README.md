@@ -6,3 +6,5 @@
   SQL, PowerBI
   
   SQL script: [HERE](https://github.com/mroberts567/PortfolioProjects/blob/main/lego_processing.sql)
+  
+  ![LEGO Dashboard](https://github.com/mroberts567/PortfolioProjects/blob/main/Lego_dashboard.pdf)
