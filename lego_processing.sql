@@ -5,12 +5,14 @@ SELECT year,
 GROUP BY year
 ORDER BY year;
 
+
 /* Largest set published between 1950 - 2017 */
 SELECT year,
 		name,
 		MAX(num_parts) as num_parts
 	FROM sets;
 
+	
 /* Number of sets published each year */
 SELECT year,
 		COUNT(DISTINCT(set_num)) as num_sets
@@ -18,19 +20,17 @@ SELECT year,
 GROUP BY year
 ORDER BY year;
 
-/* Which sets require the most colors? */
-UPDATE inventory_parts -- Change color code 9999 to black color code (same RGB value)
-	SET color_id = 0
-	WHERE color_id = 9999;
 
+/* Which sets require the most colors? */
 SELECT inventory_id,
 		sets.year,
 		inventories.set_num,
 		sets.name as set_name,
-		COUNT(DISTINCT(colors.id)) AS color_count
+		COUNT(DISTINCT(colors.id)) AS color_count,
+		CASE WHEN inventory_parts.color_id = 9999 THEN 0 ELSE inventory_parts.color_id END AS color_id2 -- Change color code 9999 to black color code (same RGB value)
 	FROM inventory_parts
 	LEFT JOIN colors
-		ON inventory_parts.color_id = colors.id
+		ON color_id2 = colors.id
 		AND colors.id >-1  --remove color "unknown"
 	LEFT JOIN inventories
 		ON inventory_parts.inventory_id = inventories.id
@@ -39,6 +39,7 @@ SELECT inventory_id,
 GROUP BY sets.set_num
 ORDER BY color_count DESC
 LIMIT 1;
+
 
 /* What percentage of sets have spare parts? */
 WITH sparesCTE AS (SELECT year,
@@ -79,6 +80,7 @@ GROUP BY parts.part_num
 ORDER BY num_sets DESC
 LIMIT 1;
 
+
 /* Themes of sets released prior to 1960 */
 SELECT sets.theme_id,
 		COUNT(DISTINCT sets.set_num) AS num_sets,
@@ -89,6 +91,7 @@ SELECT sets.theme_id,
 WHERE sets.year < 1960
 GROUP BY themes.name
 ORDER BY num_sets DESC;
+
 
 /* Relationship between number of parts and number of colors */
 SELECT sets.year,
