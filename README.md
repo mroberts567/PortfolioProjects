@@ -13,7 +13,7 @@
   
 - ## Powerlifting data analysis
 
-  *This project examines data from the OpenPowerlifting database, available on Kaggle [here](https://www.kaggle.com/datasets/open-powerlifting/powerlifting-database).
+  *This project examines data from the OpenPowerlifting database, available on Kaggle* [here](https://www.kaggle.com/datasets/open-powerlifting/powerlifting-database).
 
   The dataset covers meets from 1964 to 2019, and includes competition information for the three main barbell lifs: squat, bench press, and deadlift.
 
