@@ -8,3 +8,15 @@
   SQL script: [HERE](https://github.com/mroberts567/PortfolioProjects/blob/main/lego_processing.sql)
   
   ![LEGO Dashboard](https://github.com/mroberts567/PortfolioProjects/blob/main/Lego_dashboard.pdf)
+  
+  
+  
+- ## Powerlifting data analysis
+
+This project examines data from the OpenPowerlifting database, available on Kaggle [here](https://www.kaggle.com/datasets/open-powerlifting/powerlifting-database).
+
+The dataset covers meets from 1964 to 2019, and includes competition information for the three main barbell lifs: squat, bench press, and deadlift.
+
+Python (pandas, numpy, matplotlib), Jupyter Notebook
+
+Jupyter notebook [HERE]
