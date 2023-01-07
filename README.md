@@ -15,7 +15,7 @@
 
   *This project examines data from the OpenPowerlifting database, available on Kaggle* [here](https://www.kaggle.com/datasets/open-powerlifting/powerlifting-database).
 
-  The dataset contains competition information from 1964 to 2019 for the three main barbell lifs: squat, bench press, and deadlift.
+  The dataset contains competition information from 1964 to 2019 for the three main barbell lifts: squat, bench press, and deadlift.
 
   Python (pandas, numpy, matplotlib), Jupyter Notebook
 
