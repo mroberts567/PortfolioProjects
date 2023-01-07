@@ -19,4 +19,4 @@
 
   Python (pandas, numpy, matplotlib), Jupyter Notebook
 
-  Jupyter notebook [HERE](https://github.com/mroberts567/PortfolioProjects/blob/d7f39400746a2739bfe545a8ceb3770771f8d2d0/pl_db.ipynb)
+  Jupyter notebook [HERE](https://github.com/mroberts567/PortfolioProjects/blob/59257c3ddb06b916acb1a567c91a1ebfd116e38b/pl_db.ipynb)
