@@ -5,9 +5,9 @@
   
   SQL, Power BI
   
-  SQL script: [HERE](https://github.com/mroberts567/PortfolioProjects/blob/main/lego_processing.sql)
+  SQL script: [HERE](https://github.com/mroberts567/PortfolioProjects/blob/971f8dff05f173447f77bee406f4307d45cd8813/lego_processing.sql)
   
-  ![LEGO Dashboard](https://github.com/mroberts567/PortfolioProjects/blob/main/Lego_dashboard.pdf)
+  ![LEGO Dashboard](https://github.com/mroberts567/PortfolioProjects/blob/971f8dff05f173447f77bee406f4307d45cd8813/Lego_dashboard.pdf)
   
   
   
